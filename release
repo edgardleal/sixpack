@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -eo pipefail; [[ $RELEASE_TRACE ]] && set -x
 
-PACKAGE_NAME='sixpack'
-INIT_PACKAGE_NAME='sixpack'
+PACKAGE_NAME='sevenpack'
+INIT_PACKAGE_NAME='sevenpack'
 PUBLIC="true"
 
 # Colors
@@ -14,10 +14,10 @@ MAGENTA="\033[0;35m"  # magenta
 CYAN="\033[0;36m"     # cyan
 
 # ensure wheel is available
-pip install wheel > /dev/null
+pip3 install wheel > /dev/null
 
 # ensure Pygment is available
-pip install Pygments > /dev/null
+pip3 install Pygments > /dev/null
 
 command -v gitchangelog >/dev/null 2>&1 || {
     echo -e "${RED}WARNING: Missing gitchangelog binary, please run: pip install gitchangelog==2.2.0${COLOR_OFF}\n"

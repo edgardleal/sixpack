@@ -8,7 +8,7 @@ except ImportError:
 
 
 setup(
-    name='Sixpack',
+    name='Sevenpack',
     version=__version__,
     author='SeatGeek',
     author_email='hi@seatgeek.com',
