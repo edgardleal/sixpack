@@ -2,7 +2,7 @@
 set -eo pipefail; [[ $RELEASE_TRACE ]] && set -x
 
 PACKAGE_NAME='sevenpack'
-INIT_PACKAGE_NAME='sevenpack'
+INIT_PACKAGE_NAME='sixpack'
 PUBLIC="true"
 
 # Colors
